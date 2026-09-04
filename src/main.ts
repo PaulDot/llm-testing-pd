@@ -23,6 +23,10 @@ async function handleSendMessage() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message:query })
         });
+        // Force 400s/500s errors to trigger the catch block
+        if (!response.ok) {
+            throw new Error(`Server returned status code ${response.status}`);
+        }
         const data = await response.json();
         appendMessage(data.reply || 'No reponse needed from assistant.', 'ai');
     } catch (error) {
