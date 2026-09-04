@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "vite",
     "test:ui": "playwright test",
-    "test:eval": "promptfoo eval"
+    "test:eval": "promptfoo eval -c promptfooconfig.yaml",
+    "test:eval:live": "promptfoo eval -c promptfooconfig.live.yaml"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
+    "@types/node": "^26.4.1",
     "promptfoo": "^0.122.2",
     "typescript": "^5.0.0",
     "vite": "^5.0.0"
