@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vite",
     "test:ui": "playwright test",
-    "test:eval": "promptfoo eval -c promptfooconfig.yaml",
-    "test:eval:live": "promptfoo eval -c promptfooconfig.live.yaml"
+    "test:eval": "node run-evals.js",
+    "test:eval:mock": "node run-evals.js --force-mock"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
