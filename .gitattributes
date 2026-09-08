@@ -1,0 +1,7 @@
+# Enforce unix line endings 
+* text=auto eol=lf
+
+*.js text eol=lf
+*.ts text eol=lf
+*.yml text eol=lf
+*.json text eol=lf

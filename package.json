@@ -1,6 +1,14 @@
 {
   "name": "llm-testing-portfolio",
   "version": "1.0.0",
+  "private": true,
+  "description": "A multi-tiered testing framework decoupling frontend UI validation from semantic AI evaluation profiles.",
+  "author": "Paul Doherty",
+  "license": "MIT",
+  "engines": {
+  "node": ">=22.0.0",
+  "npm": ">=10.0.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
